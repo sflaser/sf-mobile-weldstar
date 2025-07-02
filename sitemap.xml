@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- 主页 -->
+    <url>
+        <loc>https://your-domain.com/</loc>
+        <lastmod>2025-01-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Landing Page主要页面 -->
+    <url>
+        <loc>https://your-domain.com/index.html</loc>
+        <lastmod>2025-01-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- 产品相关页面 (如果有的话) -->
+    <!-- 
+    <url>
+        <loc>https://your-domain.com/products</loc>
+        <lastmod>2025-01-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    -->
+
+    <!-- 联系页面 (如果单独存在) -->
+    <!-- 
+    <url>
+        <loc>https://your-domain.com/contact</loc>
+        <lastmod>2025-01-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    -->
+
+    <!-- 关于页面 (如果单独存在) -->
+    <!-- 
+    <url>
+        <loc>https://your-domain.com/about</loc>
+        <lastmod>2025-01-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    -->
+
+</urlset> 

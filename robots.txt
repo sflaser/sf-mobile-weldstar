@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+
+# 允许Google机器人访问所有内容
+User-agent: Googlebot
+Allow: /
+
+# 禁止访问系统文件
+Disallow: /.git/
+Disallow: /.DS_Store
+Disallow: /node_modules/
+Disallow: /*.log
+
+# Sitemap位置
+Sitemap: https://your-domain.com/sitemap.xml
+
+# 爬取延迟 (可选)
+# Crawl-delay: 1
+
+# 允许常见搜索引擎
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# 阻止已知的恶意爬虫
+User-agent: BadBot
+Disallow: /
+
+User-agent: spammer
+Disallow: / 
