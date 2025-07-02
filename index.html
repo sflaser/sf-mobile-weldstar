@@ -2382,43 +2382,86 @@
             // 更新页面标题
             document.title = t.heroTitle + " - " + t.heroSubtitle;
             
-            // 更新Hero部分
-            updateTextContent('h1', t.heroTitle);
-            updateTextContent('h2', t.heroSubtitle);
-            updateTextContentByPartialText('Experience the future', t.heroDescription);
-            updateTextContentByPartialText('Experimenta el futuro', t.heroDescription);
-            updateTextContentByPartialText('革新的なポータブル', t.heroDescription);
-            updateTextContentByPartialText('Erleben Sie die Zukunft', t.heroDescription);
+            // 精确翻译Hero部分
+            translateExactText('SF-Mobile WeldStar: Precision Welding Made Portable', t.heroTitle);
+            translateExactText('Designed for mobile operations and diverse welding needs', t.heroDescription);
             
-            // 更新存款层级部分
-            updateTextContentByPartialText('Deposit Tier System', t.depositTierTitle);
-            updateTextContentByPartialText('Sistema de Niveles', t.depositTierTitle);
-            updateTextContentByPartialText('デポジット階層システム', t.depositTierTitle);
-            updateTextContentByPartialText('Anzahlungsstufensystem', t.depositTierTitle);
+            // 翻译客户评价标题
+            translateExactText('Widely Loved by Users Across America', t.testimonialsTitle);
             
-            // 更新特性标题
-            updateTextContentByPartialText('Why Choose SF-Mobile', t.featuresTitle);
-            updateTextContentByPartialText('Por Qué Elegir', t.featuresTitle);
-            updateTextContentByPartialText('なぜSF-Mobile', t.featuresTitle);
-            updateTextContentByPartialText('Warum SF-Mobile', t.featuresTitle);
+            // 翻译问题解决标题
+            translateExactText('Are You Still Troubled by These Welding Problems?', 'Are You Still Troubled by These Welding Problems?');
+            if (lang === 'es') translateExactText('Are You Still Troubled by These Welding Problems?', '¿Todavía Te Molestan Estos Problemas de Soldadura?');
+            if (lang === 'ja') translateExactText('Are You Still Troubled by These Welding Problems?', 'これらの溶接問題にまだ悩まされていませんか？');
+            if (lang === 'de') translateExactText('Are You Still Troubled by These Welding Problems?', 'Werden Sie Noch von Diesen Schweißproblemen Geplagt?');
             
-            // 更新客户评价标题
-            updateTextContentByPartialText('Widely Loved by Users', t.testimonialsTitle);
-            updateTextContentByPartialText('Ampliamente Amado', t.testimonialsTitle);
-            updateTextContentByPartialText('アメリカ全土のユーザー', t.testimonialsTitle);
-            updateTextContentByPartialText('Weithin Geliebt', t.testimonialsTitle);
+            // 翻译物流标题
+            translateExactText('Direct Shipping from Los Angeles Warehouse - Fast Delivery in 5-10 Days', t.shippingTitle);
             
-            // 更新物流标题
-            updateTextContentByPartialText('Direct Shipping from Los Angeles', t.shippingTitle);
-            updateTextContentByPartialText('Envío Directo desde', t.shippingTitle);
-            updateTextContentByPartialText('ロサンゼルス倉庫から', t.shippingTitle);
-            updateTextContentByPartialText('Direktversand aus', t.shippingTitle);
+            // 翻译定价标题
+            translateExactText('🏷️ SF-Mobile WeldStar US Pricing', '🏷️ SF-Mobile WeldStar US Pricing');
+            if (lang === 'es') translateExactText('🏷️ SF-Mobile WeldStar US Pricing', '🏷️ Precios SF-Mobile WeldStar EE.UU.');
+            if (lang === 'ja') translateExactText('🏷️ SF-Mobile WeldStar US Pricing', '🏷️ SF-Mobile WeldStar米国価格');
+            if (lang === 'de') translateExactText('🏷️ SF-Mobile WeldStar US Pricing', '🏷️ SF-Mobile WeldStar US-Preise');
             
-            // 更新联系标题
-            updateTextContentByPartialText('Contact Us', t.contactTitle);
-            updateTextContentByPartialText('Contáctanos', t.contactTitle);
-            updateTextContentByPartialText('お問い合わせ', t.contactTitle);
-            updateTextContentByPartialText('Kontaktieren Sie', t.contactTitle);
+            // 翻译技术规格标题
+            translateExactText('Technical Specifications', 'Technical Specifications');
+            if (lang === 'es') translateExactText('Technical Specifications', 'Especificaciones Técnicas');
+            if (lang === 'ja') translateExactText('Technical Specifications', '技術仕様');
+            if (lang === 'de') translateExactText('Technical Specifications', 'Technische Spezifikationen');
+            
+            // 翻译为什么选择标题
+            translateExactText('Why Choose SF-Mobile WeldStar?', t.featuresTitle);
+            
+            // 翻译多功能标题
+            translateExactText('Not Just Welding: Cleaning and Cutting Too', 'Not Just Welding: Cleaning and Cutting Too');
+            if (lang === 'es') translateExactText('Not Just Welding: Cleaning and Cutting Too', 'No Solo Soldadura: También Limpieza y Corte');
+            if (lang === 'ja') translateExactText('Not Just Welding: Cleaning and Cutting Too', '溶接だけではない：クリーニングとカッティングも');
+            if (lang === 'de') translateExactText('Not Just Welding: Cleaning and Cutting Too', 'Nicht Nur Schweißen: Auch Reinigung und Schneiden');
+            
+            // 翻译包装内容标题
+            translateExactText('What\'s in the Box', 'What\'s in the Box');
+            if (lang === 'es') translateExactText('What\'s in the Box', 'Qué Hay en la Caja');
+            if (lang === 'ja') translateExactText('What\'s in the Box', 'ボックスの中身');
+            if (lang === 'de') translateExactText('What\'s in the Box', 'Was ist in der Box');
+            
+            // 翻译FAQ标题
+            translateExactText('Frequently Asked Questions', 'Frequently Asked Questions');
+            if (lang === 'es') translateExactText('Frequently Asked Questions', 'Preguntas Frecuentes');
+            if (lang === 'ja') translateExactText('Frequently Asked Questions', 'よくある質問');
+            if (lang === 'de') translateExactText('Frequently Asked Questions', 'Häufig Gestellte Fragen');
+            
+            // 翻译问题分类
+            translateExactText('Complex Traditional Welding', 'Complex Traditional Welding');
+            if (lang === 'es') translateExactText('Complex Traditional Welding', 'Soldadura Tradicional Compleja');
+            if (lang === 'ja') translateExactText('Complex Traditional Welding', '複雑な従来溶接');
+            if (lang === 'de') translateExactText('Complex Traditional Welding', 'Komplexes Traditionelles Schweißen');
+            
+            translateExactText('Heavy Equipment, Not Portable', 'Heavy Equipment, Not Portable');
+            if (lang === 'es') translateExactText('Heavy Equipment, Not Portable', 'Equipo Pesado, No Portátil');
+            if (lang === 'ja') translateExactText('Heavy Equipment, Not Portable', '重い機器、ポータブルでない');
+            if (lang === 'de') translateExactText('Heavy Equipment, Not Portable', 'Schwere Ausrüstung, Nicht Tragbar');
+            
+            translateExactText('Low Welding Efficiency', 'Low Welding Efficiency');
+            if (lang === 'es') translateExactText('Low Welding Efficiency', 'Baja Eficiencia de Soldadura');
+            if (lang === 'ja') translateExactText('Low Welding Efficiency', '低い溶接効率');
+            if (lang === 'de') translateExactText('Low Welding Efficiency', 'Niedrige Schweißeffizienz');
+            
+            translateExactText('Unattractive Welds', 'Unattractive Welds');
+            if (lang === 'es') translateExactText('Unattractive Welds', 'Soldaduras Poco Atractivas');
+            if (lang === 'ja') translateExactText('Unattractive Welds', '魅力のない溶接');
+            if (lang === 'de') translateExactText('Unattractive Welds', 'Unattraktive Schweißnähte');
+            
+            // 翻译解决方案标题
+            translateExactText('SF-Mobile WeldStar is Here for You! One-Stop Solution for Your Mobile Welding Challenges', 'SF-Mobile WeldStar is Here for You! One-Stop Solution for Your Mobile Welding Challenges');
+            if (lang === 'es') translateExactText('SF-Mobile WeldStar is Here for You! One-Stop Solution for Your Mobile Welding Challenges', '¡SF-Mobile WeldStar Está Aquí Para Ti! Solución Integral Para Tus Desafíos de Soldadura Móvil');
+            if (lang === 'ja') translateExactText('SF-Mobile WeldStar is Here for You! One-Stop Solution for Your Mobile Welding Challenges', 'SF-Mobile WeldStarがあなたのために！モバイル溶接チャレンジのワンストップソリューション');
+            if (lang === 'de') translateExactText('SF-Mobile WeldStar is Here for You! One-Stop Solution for Your Mobile Welding Challenges', 'SF-Mobile WeldStar Ist Für Sie Da! One-Stop-Lösung Für Ihre Mobile Schweißherausforderungen');
+            
+            // 翻译按钮文字
+            translateButtonText('Get a Quote', t.preOrderNow);
+            translateButtonText('Schedule a Free Demo', t.contactUs);
+            translateButtonText('Choose Your Deposit Tier', t.heroButton);
             
             // 保存语言选择
             localStorage.setItem('selected-language', lang);
@@ -2426,6 +2469,24 @@
             // 显示确认消息
             alert(t.languageChanged);
             console.log('Language changed to:', lang);
+        }
+        
+        function translateExactText(originalText, newText) {
+            const allElements = document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, span, div, a, button, th, td');
+            allElements.forEach(el => {
+                if (el.textContent.trim() === originalText) {
+                    el.textContent = newText;
+                }
+            });
+        }
+        
+        function translateButtonText(originalText, newText) {
+            const buttons = document.querySelectorAll('a, button');
+            buttons.forEach(el => {
+                if (el.textContent.trim() === originalText) {
+                    el.textContent = newText;
+                }
+            });
         }
         
         function updateTextContent(selector, newText) {
