@@ -1,0 +1,10 @@
+# Netlify redirects file
+# Make sure the root path serves index.html
+/  /index.html  200
+
+# Redirect landing page variations
+/landing-page  /landing page.html  200
+/landing  /landing page.html  200
+
+# Handle 404s by serving index.html (for SPA behavior if needed)
+/*  /index.html  404 
