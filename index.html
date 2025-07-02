@@ -64,6 +64,10 @@
     
     <!-- 安全性优化 -->
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+    <!-- 多语言支持脚本 -->
+    <script src="js/translations.js"></script>
+    
     <style>
         /* 全局配色变量 */
         :root {
@@ -148,6 +152,78 @@
             to { transform: scale(1); opacity: 1; }
         }
         
+        /* 语言切换器样式 */
+        .language-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 5px;
+        }
+        
+        .language-button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .language-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+        
+        .language-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            margin-top: 5px;
+            min-width: 150px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        
+        .language-dropdown.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .language-option {
+            display: block;
+            width: 100%;
+            padding: 10px 15px;
+            text-align: left;
+            border: none;
+            background: none;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            font-size: 14px;
+        }
+        
+        .language-option:hover {
+            background: var(--primary-light);
+        }
+        
+        .language-option.active {
+            background: var(--primary-light);
+            color: var(--primary);
+            font-weight: bold;
+        }
+
         /* Hero Section */
         .hero {
             background-color: var(--warm-bg);
