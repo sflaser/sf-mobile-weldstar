@@ -2184,28 +2184,278 @@
     </div>
     
     <script>
-        function changeLanguage(lang) {
-            // 简单的语言切换功能
-            const translations = {
-                en: "Page language changed to English",
-                es: "Idioma de página cambiado a Español", 
-                ja: "ページ言語が日本語に変更されました",
-                de: "Seitensprache auf Deutsch geändert"
-            };
+        // 完整的翻译数据
+        const translations = {
+            en: {
+                // Hero部分
+                heroTitle: "🔥 SF-Mobile WeldStar",
+                heroSubtitle: "Professional Portable Laser Welding Solution",
+                heroDescription: "Experience the future of welding with our revolutionary portable laser welder. Perfect precision, unmatched portability, and professional results every time.",
+                heroButton: "Choose Your Deposit Tier",
+                
+                // 存款层级标题
+                depositTierTitle: "💰 Deposit Tier System with Bonus Credits",
+                depositTierSubtitle: "Choose your deposit tier and earn bonus credits with boost multipliers!",
+                
+                // 表格标题
+                depositAmount: "Deposit Amount",
+                boostMultiplier: "Boost Multiplier",
+                totalCredit: "Total Credit",
+                bonusCredit: "Bonus Credit",
+                
+                // 特性部分
+                featuresTitle: "Why Choose SF-Mobile WeldStar?",
+                precisionTitle: "🎯 Precision Welding",
+                precisionDesc: "Advanced laser technology ensures perfect welds every time with minimal heat-affected zones.",
+                portableTitle: "🚀 Ultra Portable", 
+                portableDesc: "Lightweight design allows for easy transport and operation in any location.",
+                efficientTitle: "⚡ High Efficiency",
+                efficientDesc: "Fast welding speeds with superior quality reduce project time and costs.",
+                warrantyTitle: "🛡️ 2-Year Warranty",
+                warrantyDesc: "Complete peace of mind with comprehensive warranty and US-based support.",
+                
+                // 客户评价
+                testimonialsTitle: "Widely Loved by Users Across America",
+                
+                // 物流信息
+                shippingTitle: "Direct Shipping from Los Angeles Warehouse - Fast Delivery in 5-10 Days",
+                shippingDesc: "Sky Fire Laser maintains a professional overseas warehouse in Los Angeles, providing North American customers with a more convenient purchasing experience.",
+                
+                // 联系信息
+                contactTitle: "Contact Us",
+                
+                // 按钮文字
+                preOrderNow: "Pre-Order Now",
+                learnMore: "Learn More",
+                contactUs: "Contact Us",
+                
+                // 确认消息
+                languageChanged: "Page language changed to English"
+            },
             
-            alert(translations[lang] || "Language changed");
+            es: {
+                // Hero部分
+                heroTitle: "🔥 SF-Mobile WeldStar",
+                heroSubtitle: "Solución Profesional de Soldadura Láser Portátil",
+                heroDescription: "Experimenta el futuro de la soldadura con nuestro revolucionario soldador láser portátil. Precisión perfecta, portabilidad incomparable y resultados profesionales en todo momento.",
+                heroButton: "Elige Tu Nivel de Depósito",
+                
+                // 存款层级标题
+                depositTierTitle: "💰 Sistema de Niveles de Depósito con Créditos Bonus",
+                depositTierSubtitle: "¡Elige tu nivel de depósito y gana créditos bonus con multiplicadores!",
+                
+                // 表格标题
+                depositAmount: "Monto del Depósito",
+                boostMultiplier: "Multiplicador Boost",
+                totalCredit: "Crédito Total",
+                bonusCredit: "Crédito Bonus",
+                
+                // 特性部分
+                featuresTitle: "¿Por Qué Elegir SF-Mobile WeldStar?",
+                precisionTitle: "🎯 Soldadura de Precisión",
+                precisionDesc: "La tecnología láser avanzada asegura soldaduras perfectas cada vez con zonas mínimas afectadas por el calor.",
+                portableTitle: "🚀 Ultra Portátil",
+                portableDesc: "Diseño ligero permite fácil transporte y operación en cualquier ubicación.",
+                efficientTitle: "⚡ Alta Eficiencia",
+                efficientDesc: "Velocidades rápidas de soldadura con calidad superior reducen el tiempo del proyecto y los costos.",
+                warrantyTitle: "🛡️ Garantía de 2 Años",
+                warrantyDesc: "Completa tranquilidad con garantía integral y soporte basado en EE.UU.",
+                
+                // 客户评价
+                testimonialsTitle: "Ampliamente Amado por Usuarios en Toda América",
+                
+                // 物流信息
+                shippingTitle: "Envío Directo desde Almacén de Los Ángeles - Entrega Rápida en 5-10 Días",
+                shippingDesc: "Sky Fire Laser mantiene un almacén profesional en el extranjero en Los Ángeles, proporcionando a los clientes de América del Norte una experiencia de compra más conveniente.",
+                
+                // 联系信息
+                contactTitle: "Contáctanos",
+                
+                // 按钮文字
+                preOrderNow: "Pre-Ordenar Ahora",
+                learnMore: "Saber Más",
+                contactUs: "Contáctanos",
+                
+                // 确认消息
+                languageChanged: "Idioma de página cambiado a Español"
+            },
+            
+            ja: {
+                // Hero部分
+                heroTitle: "🔥 SF-Mobile WeldStar",
+                heroSubtitle: "プロフェッショナルポータブルレーザー溶接ソリューション",
+                heroDescription: "革新的なポータブルレーザー溶接機で溶接の未来を体験してください。完璧な精度、比類のないポータビリティ、そして毎回プロフェッショナルな結果。",
+                heroButton: "デポジット階層を選択",
+                
+                // 存款层级标题
+                depositTierTitle: "💰 ボーナスクレジット付きデポジット階層システム",
+                depositTierSubtitle: "デポジット階層を選択してブーストマルチプライヤーでボーナスクレジットを獲得！",
+                
+                // 表格标题
+                depositAmount: "デポジット金額",
+                boostMultiplier: "ブーストマルチプライヤー",
+                totalCredit: "総クレジット",
+                bonusCredit: "ボーナスクレジット",
+                
+                // 特性部分
+                featuresTitle: "なぜSF-Mobile WeldStarを選ぶのか？",
+                precisionTitle: "🎯 精密溶接",
+                precisionDesc: "先進のレーザー技術により、最小限の熱影響部で毎回完璧な溶接を保証します。",
+                portableTitle: "🚀 超ポータブル",
+                portableDesc: "軽量設計により、どこでも簡単に運搬・操作が可能です。",
+                efficientTitle: "⚡ 高効率",
+                efficientDesc: "優れた品質での高速溶接により、プロジェクト時間とコストを削減します。",
+                warrantyTitle: "🛡️ 2年保証",
+                warrantyDesc: "包括的な保証と米国ベースのサポートで完全な安心をご提供します。",
+                
+                // 客户评价
+                testimonialsTitle: "アメリカ全土のユーザーに広く愛されています",
+                
+                // 物流信息
+                shippingTitle: "ロサンゼルス倉庫から直送 - 5-10日での高速配送",
+                shippingDesc: "Sky Fire Laserはロサンゼルスにプロフェッショナルな海外倉庫を維持し、北米の顧客により便利な購入体験を提供しています。",
+                
+                // 联系信息
+                contactTitle: "お問い合わせ",
+                
+                // 按钮文字
+                preOrderNow: "今すぐ予約注文",
+                learnMore: "詳細を学ぶ",
+                contactUs: "お問い合わせ",
+                
+                // 确认消息
+                languageChanged: "ページ言語が日本語に変更されました"
+            },
+            
+            de: {
+                // Hero部分
+                heroTitle: "🔥 SF-Mobile WeldStar",
+                heroSubtitle: "Professionelle Tragbare Laserschweißlösung",
+                heroDescription: "Erleben Sie die Zukunft des Schweißens mit unserem revolutionären tragbaren Laserschweißgerät. Perfekte Präzision, unvergleichliche Tragbarkeit und professionelle Ergebnisse jedes Mal.",
+                heroButton: "Wählen Sie Ihre Anzahlungsstufe",
+                
+                // 存款层级标题
+                depositTierTitle: "💰 Anzahlungsstufensystem mit Bonus-Credits",
+                depositTierSubtitle: "Wählen Sie Ihre Anzahlungsstufe und verdienen Sie Bonus-Credits mit Boost-Multiplikatoren!",
+                
+                // 表格标题
+                depositAmount: "Anzahlungsbetrag",
+                boostMultiplier: "Boost-Multiplikator",
+                totalCredit: "Gesamtkredit",
+                bonusCredit: "Bonus-Credit",
+                
+                // 特性部分
+                featuresTitle: "Warum SF-Mobile WeldStar Wählen?",
+                precisionTitle: "🎯 Präzisionsschweißen",
+                precisionDesc: "Fortschrittliche Lasertechnologie gewährleistet perfekte Schweißnähte jedes Mal mit minimalen Wärmeeinflußzonen.",
+                portableTitle: "🚀 Ultra Tragbar",
+                portableDesc: "Leichtgewichtiges Design ermöglicht einfachen Transport und Betrieb an jedem Ort.",
+                efficientTitle: "⚡ Hohe Effizienz",
+                efficientDesc: "Schnelle Schweißgeschwindigkeiten mit überlegener Qualität reduzieren Projektzeit und -kosten.",
+                warrantyTitle: "🛡️ 2-Jahres-Garantie",
+                warrantyDesc: "Vollständige Seelenruhe mit umfassender Garantie und US-basiertem Support.",
+                
+                // 客户评价
+                testimonialsTitle: "Weithin Geliebt von Benutzern in Ganz Amerika",
+                
+                // 物流信息
+                shippingTitle: "Direktversand aus Los Angeles Lager - Schnelle Lieferung in 5-10 Tagen",
+                shippingDesc: "Sky Fire Laser unterhält ein professionelles Übersee-Lager in Los Angeles und bietet nordamerikanischen Kunden eine bequemere Kauferfahrung.",
+                
+                // 联系信息
+                contactTitle: "Kontaktieren Sie Uns",
+                
+                // 按钮文字
+                preOrderNow: "Jetzt Vorbestellen",
+                learnMore: "Mehr Erfahren",
+                contactUs: "Kontaktieren Sie Uns",
+                
+                // 确认消息
+                languageChanged: "Seitensprache auf Deutsch geändert"
+            }
+        };
+
+        function changeLanguage(lang) {
+            const t = translations[lang];
+            if (!t) return;
+            
+            // 更新页面标题
+            document.title = t.heroTitle + " - " + t.heroSubtitle;
+            
+            // 更新Hero部分
+            updateTextContent('h1', t.heroTitle);
+            updateTextContent('h2', t.heroSubtitle);
+            updateTextContentByPartialText('Experience the future', t.heroDescription);
+            updateTextContentByPartialText('Experimenta el futuro', t.heroDescription);
+            updateTextContentByPartialText('革新的なポータブル', t.heroDescription);
+            updateTextContentByPartialText('Erleben Sie die Zukunft', t.heroDescription);
+            
+            // 更新存款层级部分
+            updateTextContentByPartialText('Deposit Tier System', t.depositTierTitle);
+            updateTextContentByPartialText('Sistema de Niveles', t.depositTierTitle);
+            updateTextContentByPartialText('デポジット階層システム', t.depositTierTitle);
+            updateTextContentByPartialText('Anzahlungsstufensystem', t.depositTierTitle);
+            
+            // 更新特性标题
+            updateTextContentByPartialText('Why Choose SF-Mobile', t.featuresTitle);
+            updateTextContentByPartialText('Por Qué Elegir', t.featuresTitle);
+            updateTextContentByPartialText('なぜSF-Mobile', t.featuresTitle);
+            updateTextContentByPartialText('Warum SF-Mobile', t.featuresTitle);
+            
+            // 更新客户评价标题
+            updateTextContentByPartialText('Widely Loved by Users', t.testimonialsTitle);
+            updateTextContentByPartialText('Ampliamente Amado', t.testimonialsTitle);
+            updateTextContentByPartialText('アメリカ全土のユーザー', t.testimonialsTitle);
+            updateTextContentByPartialText('Weithin Geliebt', t.testimonialsTitle);
+            
+            // 更新物流标题
+            updateTextContentByPartialText('Direct Shipping from Los Angeles', t.shippingTitle);
+            updateTextContentByPartialText('Envío Directo desde', t.shippingTitle);
+            updateTextContentByPartialText('ロサンゼルス倉庫から', t.shippingTitle);
+            updateTextContentByPartialText('Direktversand aus', t.shippingTitle);
+            
+            // 更新联系标题
+            updateTextContentByPartialText('Contact Us', t.contactTitle);
+            updateTextContentByPartialText('Contáctanos', t.contactTitle);
+            updateTextContentByPartialText('お問い合わせ', t.contactTitle);
+            updateTextContentByPartialText('Kontaktieren Sie', t.contactTitle);
+            
+            // 保存语言选择
             localStorage.setItem('selected-language', lang);
             
-            // 这里可以添加实际的翻译逻辑
+            // 显示确认消息
+            alert(t.languageChanged);
             console.log('Language changed to:', lang);
         }
         
-        // 页面加载时恢复语言选择
+        function updateTextContent(selector, newText) {
+            const elements = document.querySelectorAll(selector);
+            elements.forEach(el => {
+                if (el.textContent.trim()) {
+                    el.textContent = newText;
+                }
+            });
+        }
+        
+        function updateTextContentByPartialText(partialText, newText) {
+            const allElements = document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, span, div, a, button');
+            allElements.forEach(el => {
+                if (el.textContent.includes(partialText)) {
+                    el.textContent = newText;
+                }
+            });
+        }
+        
+        // 页面加载时恢复语言选择并应用翻译
         document.addEventListener('DOMContentLoaded', function() {
             const savedLang = localStorage.getItem('selected-language') || 'en';
             const selector = document.querySelector('select[onchange*="changeLanguage"]');
             if (selector) {
                 selector.value = savedLang;
+                // 如果不是英语，立即应用翻译
+                if (savedLang !== 'en') {
+                    setTimeout(() => changeLanguage(savedLang), 500);
+                }
             }
         });
     </script>
