@@ -318,8 +318,181 @@
         </div>
     </section>
 
-    <script src="js/translations.js"></script>
     <script>
+        // 内联翻译数据以确保立即可用
+        const translations = {
+            en: {
+                pageTitle: "SF-Mobile WeldStar - Multilingual Demo",
+                languageSelector: "Language",
+                heroTitle: "🔥 SF-Mobile WeldStar",
+                heroSubtitle: "Professional Portable Laser Welding Solution",
+                heroDescription: "Experience the future of welding with our revolutionary portable laser welder. Perfect precision, unmatched portability, and professional results every time.",
+                heroButton: "Choose Your Deposit Tier",
+                featuresTitle: "Why Choose SF-Mobile WeldStar?",
+                features: {
+                    precision: {
+                        title: "🎯 Precision Welding",
+                        description: "Advanced laser technology ensures perfect welds every time with minimal heat-affected zones."
+                    },
+                    portable: {
+                        title: "🚀 Ultra Portable",
+                        description: "Lightweight design allows for easy transport and operation in any location."
+                    },
+                    efficient: {
+                        title: "⚡ High Efficiency",
+                        description: "Fast welding speeds with superior quality reduce project time and costs."
+                    },
+                    warranty: {
+                        title: "🛡️ 2-Year Warranty",
+                        description: "Complete peace of mind with comprehensive warranty and US-based support."
+                    }
+                },
+                testimonialsTitle: "Widely Loved by Users Across America",
+                testimonials: {
+                    john: {
+                        text: "Since introducing SF-Mobile WeldStar, our on-site installation efficiency has increased by over 30%! The equipment is extremely portable.",
+                        author: "John Smith"
+                    },
+                    sarah: {
+                        text: "Our company had high requirements for welding quality. After purchasing SF-Mobile WeldStar, even new employees can operate it after simple training.",
+                        author: "Sarah Johnson"
+                    }
+                },
+                contactTitle: "Contact Us",
+                contactEmail: "info@sflaser.net",
+                contactPhone: "+1 (951) 233-4527",
+                contactAddress: "Los Angeles Warehouse, California, USA"
+            },
+            es: {
+                pageTitle: "SF-Mobile WeldStar - Demo Multiidioma",
+                languageSelector: "Idioma",
+                heroTitle: "🔥 SF-Mobile WeldStar",
+                heroSubtitle: "Solución Profesional de Soldadura Láser Portátil",
+                heroDescription: "Experimenta el futuro de la soldadura con nuestro revolucionario soldador láser portátil. Precisión perfecta, portabilidad incomparable y resultados profesionales.",
+                heroButton: "Elige Tu Nivel de Depósito",
+                featuresTitle: "¿Por Qué Elegir SF-Mobile WeldStar?",
+                features: {
+                    precision: {
+                        title: "🎯 Soldadura de Precisión",
+                        description: "La tecnología láser avanzada asegura soldaduras perfectas cada vez con zonas mínimas afectadas por el calor."
+                    },
+                    portable: {
+                        title: "🚀 Ultra Portátil",
+                        description: "Diseño ligero permite fácil transporte y operación en cualquier ubicación."
+                    },
+                    efficient: {
+                        title: "⚡ Alta Eficiencia",
+                        description: "Velocidades rápidas de soldadura con calidad superior reducen el tiempo del proyecto y los costos."
+                    },
+                    warranty: {
+                        title: "🛡️ Garantía de 2 Años",
+                        description: "Completa tranquilidad con garantía integral y soporte basado en EE.UU."
+                    }
+                },
+                testimonialsTitle: "Ampliamente Amado por Usuarios en Toda América",
+                testimonials: {
+                    john: {
+                        text: "¡Desde que introdujimos SF-Mobile WeldStar, nuestra eficiencia de instalación en sitio ha aumentado más del 30%! El equipo es extremadamente portátil.",
+                        author: "John Smith"
+                    },
+                    sarah: {
+                        text: "Nuestra empresa tenía altos requisitos para la calidad de soldadura. Después de comprar SF-Mobile WeldStar, incluso empleados nuevos pueden operarlo.",
+                        author: "Sarah Johnson"
+                    }
+                },
+                contactTitle: "Contáctanos",
+                contactEmail: "info@sflaser.net",
+                contactPhone: "+1 (951) 233-4527",
+                contactAddress: "Almacén de Los Ángeles, California, EE.UU."
+            },
+            ja: {
+                pageTitle: "SF-Mobile WeldStar - 多言語デモ",
+                languageSelector: "言語",
+                heroTitle: "🔥 SF-Mobile WeldStar",
+                heroSubtitle: "プロフェッショナルポータブルレーザー溶接ソリューション",
+                heroDescription: "革新的なポータブルレーザー溶接機で溶接の未来を体験してください。完璧な精度、比類のないポータビリティ、そして毎回プロフェッショナルな結果。",
+                heroButton: "デポジット階層を選択",
+                featuresTitle: "なぜSF-Mobile WeldStarを選ぶのか？",
+                features: {
+                    precision: {
+                        title: "🎯 精密溶接",
+                        description: "先進のレーザー技術により、最小限の熱影響部で毎回完璧な溶接を保証します。"
+                    },
+                    portable: {
+                        title: "🚀 超ポータブル",
+                        description: "軽量設計により、どこでも簡単に運搬・操作が可能です。"
+                    },
+                    efficient: {
+                        title: "⚡ 高効率",
+                        description: "優れた品質での高速溶接により、プロジェクト時間とコストを削減します。"
+                    },
+                    warranty: {
+                        title: "🛡️ 2年保証",
+                        description: "包括的な保証と米国ベースのサポートで完全な安心をご提供します。"
+                    }
+                },
+                testimonialsTitle: "アメリカ全土のユーザーに広く愛されています",
+                testimonials: {
+                    john: {
+                        text: "SF-Mobile WeldStarを導入してから、現場設置効率が30%以上向上しました！機器は非常にポータブルです。",
+                        author: "ジョン・スミス"
+                    },
+                    sarah: {
+                        text: "当社は溶接品質に高い要求がありました。SF-Mobile WeldStarを購入後、新入社員でも簡単な訓練後に操作できます。",
+                        author: "サラ・ジョンソン"
+                    }
+                },
+                contactTitle: "お問い合わせ",
+                contactEmail: "info@sflaser.net",
+                contactPhone: "+1 (951) 233-4527",
+                contactAddress: "ロサンゼルス倉庫、カリフォルニア州、米国"
+            },
+            de: {
+                pageTitle: "SF-Mobile WeldStar - Mehrsprachige Demo",
+                languageSelector: "Sprache",
+                heroTitle: "🔥 SF-Mobile WeldStar",
+                heroSubtitle: "Professionelle Tragbare Laserschweißlösung",
+                heroDescription: "Erleben Sie die Zukunft des Schweißens mit unserem revolutionären tragbaren Laserschweißgerät. Perfekte Präzision, unvergleichliche Tragbarkeit und professionelle Ergebnisse.",
+                heroButton: "Wählen Sie Ihre Anzahlungsstufe",
+                featuresTitle: "Warum SF-Mobile WeldStar Wählen?",
+                features: {
+                    precision: {
+                        title: "🎯 Präzisionsschweißen",
+                        description: "Fortschrittliche Lasertechnologie gewährleistet perfekte Schweißnähte jedes Mal mit minimalen Wärmeeinflußzonen."
+                    },
+                    portable: {
+                        title: "🚀 Ultra Tragbar",
+                        description: "Leichtgewichtiges Design ermöglicht einfachen Transport und Betrieb an jedem Ort."
+                    },
+                    efficient: {
+                        title: "⚡ Hohe Effizienz",
+                        description: "Schnelle Schweißgeschwindigkeiten mit überlegener Qualität reduzieren Projektzeit und -kosten."
+                    },
+                    warranty: {
+                        title: "🛡️ 2-Jahres-Garantie",
+                        description: "Vollständige Seelenruhe mit umfassender Garantie und US-basiertem Support."
+                    }
+                },
+                testimonialsTitle: "Weithin Geliebt von Benutzern in Ganz Amerika",
+                testimonials: {
+                    john: {
+                        text: "Seit der Einführung von SF-Mobile WeldStar hat sich unsere Vor-Ort-Installationseffizienz um über 30% erhöht! Das Gerät ist extrem tragbar.",
+                        author: "John Smith"
+                    },
+                    sarah: {
+                        text: "Unser Unternehmen hatte hohe Anforderungen an die Schweißqualität. Nach dem Kauf von SF-Mobile WeldStar können sogar neue Mitarbeiter es bedienen.",
+                        author: "Sarah Johnson"
+                    }
+                },
+                contactTitle: "Kontaktieren Sie Uns",
+                contactEmail: "info@sflaser.net",
+                contactPhone: "+1 (951) 233-4527",
+                contactAddress: "Los Angeles Lager, Kalifornien, USA"
+            }
+        };
+
+        let currentLanguage = 'en';
+
         function toggleLanguageDropdown() {
             const dropdown = document.getElementById('languageDropdown');
             dropdown.classList.toggle('active');
@@ -332,6 +505,27 @@
                 document.getElementById('languageDropdown').classList.remove('active');
             }
         });
+
+        function getNestedValue(obj, path) {
+            return path.split('.').reduce((current, key) => current && current[key], obj);
+        }
+
+        function updatePageContent() {
+            const t = translations[currentLanguage];
+            
+            // 更新页面标题
+            document.title = t.pageTitle;
+            document.documentElement.lang = currentLanguage;
+            
+            // 更新所有带有data-translate属性的元素
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                const value = getNestedValue(t, key);
+                if (value) {
+                    element.textContent = value;
+                }
+            });
+        }
 
         // 更新语言选择器显示
         function updateLanguageButton() {
@@ -357,21 +551,30 @@
             }
         }
 
-        // 重写setLanguage函数
-        window.setLanguage = function(lang) {
+        function setLanguage(lang) {
             currentLanguage = lang;
             localStorage.setItem('sf-weldstar-language', lang);
             updatePageContent();
             updateLanguageButton();
             document.getElementById('languageDropdown').classList.remove('active');
-        };
+        }
 
         // 页面加载完成后初始化
         document.addEventListener('DOMContentLoaded', function() {
-            // 等待translations.js加载完成
-            setTimeout(() => {
-                updateLanguageButton();
-            }, 100);
+            // 从localStorage获取保存的语言，如果没有则使用浏览器语言
+            const savedLanguage = localStorage.getItem('sf-weldstar-language');
+            const browserLanguage = navigator.language.split('-')[0];
+            
+            if (savedLanguage && translations[savedLanguage]) {
+                currentLanguage = savedLanguage;
+            } else if (translations[browserLanguage]) {
+                currentLanguage = browserLanguage;
+            } else {
+                currentLanguage = 'en'; // 默认英语
+            }
+            
+            updatePageContent();
+            updateLanguageButton();
         });
     </script>
 </body>
