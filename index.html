@@ -255,6 +255,128 @@
             box-shadow: 0 5px 15px rgba(255,140,0,0.3);
         }
         
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+        
+        .cta-button.secondary {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+        
+        .cta-button.secondary:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,140,0,0.3);
+        }
+        
+        /* Contest Promotion Section */
+        .contest-promotion {
+            background: linear-gradient(135deg, #1e3056, #2a4a7a);
+            padding: 60px 0;
+            color: white;
+        }
+        
+        .contest-banner {
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .contest-title {
+            font-size: 2.5rem;
+            color: #ff8c00;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .contest-description {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        
+        .contest-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .highlight-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid #ff8c00;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: transform 0.3s ease;
+        }
+        
+        .highlight-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .highlight-icon {
+            font-size: 2.5rem;
+            min-width: 50px;
+        }
+        
+        .highlight-text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        
+        .highlight-text strong {
+            font-size: 1.3rem;
+            color: #ff8c00;
+            margin-bottom: 5px;
+        }
+        
+        .highlight-text span {
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+        
+        .contest-cta {
+            margin-top: 40px;
+        }
+        
+        .contest-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff8c00, #ff6600);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 140, 0, 0.3);
+        }
+        
+        .contest-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 140, 0, 0.4);
+            background: linear-gradient(135deg, #ff6600, #ff4400);
+        }
+        
+        .contest-note {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #ccc;
+            font-style: italic;
+        }
+        
         /* Problems & Solutions */
         .problems {
             background-color: var(--warm-bg);
@@ -2119,7 +2241,10 @@
                     <li>High Efficiency: Fast speed, low energy consumption</li>
                     <li>Beautiful Welds: No grinding needed, high-quality finish</li>
                 </ul>
-                <a href="https://alleriastore.com/products/sf-mobile-weldstar-breeze-on-the-go-welding-torch" class="cta-button" target="_blank">Get a Quote</a>
+                <div class="cta-buttons">
+                    <a href="https://alleriastore.com/products/sf-mobile-weldstar-breeze-on-the-go-welding-torch" class="cta-button" target="_blank">Get a Quote</a>
+                    <a href="https://www.diyfiberlasercontest.com/" class="cta-button secondary" target="_blank">🏆 Join DIY Contest</a>
+                </div>
             </div>
             <div class="hero-image">
                 <img src="https://raw.githubusercontent.com/sflaser/sf-mobile-weldstar/2331166428275dd37fbef380181270d2456e1486/mobile%20weldstar%20first.jpg" alt="SF-Mobile WeldStar Portable Laser Welder" onerror="this.onerror=null; this.src='https://placehold.co/600x400?text=SF-Mobile+WeldStar';">
@@ -2270,7 +2395,10 @@
             <div class="solution">
                 <h2>SF-Mobile WeldStar is Here for You! One-Stop Solution for Your Mobile Welding Challenges</h2>
                 <p>Using advanced laser welding technology combined with ergonomic portable design, SF-Mobile WeldStar redefines the possibilities of mobile welding. Whether for on-site installation, multi-station operations, or precision welding, it can be your reliable assistant.</p>
-                <a href="mailto:info@sflaser.net" class="cta-button">Schedule a Free Demo</a>
+                <div class="cta-buttons">
+                    <a href="mailto:info@sflaser.net" class="cta-button">Schedule a Free Demo</a>
+                    <a href="https://www.diyfiberlasercontest.com/" class="cta-button secondary" target="_blank">🏆 Join DIY Contest</a>
+                </div>
             </div>
         </div>
     </section>
@@ -4341,6 +4469,50 @@ document.addEventListener('DOMContentLoaded', function() {
     transform: scale(1.2);
 }
 </style>
+
+<!-- DIY Contest Promotion Section -->
+<section class="contest-promotion">
+    <div class="container">
+        <div class="contest-banner">
+            <div class="contest-content">
+                <h2 class="contest-title">🏆 Join the SKYFIRE DIY Fiber Laser Contest!</h2>
+                <p class="contest-description">
+                    Showcase your DIY fiber laser cutting skills and compete with makers worldwide! 
+                    Win from a $5,800 prize pool with our premium SKYFIRE laser systems.
+                </p>
+                <div class="contest-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🥇</span>
+                        <div class="highlight-text">
+                            <strong>1st Place: $3,000</strong>
+                            <span>Gift Voucher</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🥈</span>
+                        <div class="highlight-text">
+                            <strong>2nd Place: $1,800</strong>
+                            <span>Gift Voucher</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🥉</span>
+                        <div class="highlight-text">
+                            <strong>3rd Place: $1,000</strong>
+                            <span>Gift Voucher</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contest-cta">
+                    <a href="https://www.diyfiberlasercontest.com/" class="contest-button" target="_blank">
+                        🚀 Register Now - Contest Open Until Sept 30, 2025!
+                    </a>
+                    <p class="contest-note">For SKYFIRE laser kit owners - Registration opens July 15, 2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Q&A 板块 - 添加在 What's in the Box 部分之后 -->
 <section class="faq-section">
