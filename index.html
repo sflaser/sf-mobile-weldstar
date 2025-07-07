@@ -1914,6 +1914,39 @@
             color: #4a4a4a;
         }
         
+        /* Link styling for model cards and accessory cards */
+        .model-card a, .accessory-card a {
+            color: #4a4a4a;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .model-card:hover a, .accessory-card:hover a {
+            color: #ff8c00;
+            text-decoration: underline;
+        }
+        
+        .model-card.highlighted a {
+            color: #ff8c00;
+            font-weight: 600;
+        }
+        
+        .model-card.highlighted:hover a {
+            color: #e07a00;
+        }
+        
+        /* Add cursor pointer to indicate clickability */
+        .model-card, .accessory-card {
+            cursor: pointer;
+        }
+        
+        /* Add small arrow indicator on hover */
+        .model-card:hover::after, .accessory-card:hover::after {
+            content: " →";
+            color: #ff8c00;
+            font-weight: bold;
+        }
+        
         .na-customization {
             display: flex;
             align-items: center;
@@ -3221,6 +3254,8 @@
                     
                     <div style="background: #fff8f0; border: 2px solid #ff8c00; border-radius: 10px; padding: 20px; margin: 25px auto; max-width: 600px;">
                         <p style="margin: 0; font-size: 0.95rem; color: #1e3056; line-height: 1.5;"><strong>* Credit = Deposit × Boost Multiplier</strong> — automatically deducted from your remaining balance when the machine lands in Los Angeles.</p>
+                        <p style="margin: 8px 0 0 0; font-size: 0.9rem; color: #ff8c00; line-height: 1.5;"><strong>⚠️ Note:</strong> This deposit boost promotion <u>can</u> be combined with other discounts.</p>
+                        <p style="margin: 8px 0 0 0; font-size: 0.9rem; color: #ff8c00; line-height: 1.5;"><strong>⏳ Deadline:</strong> Deposit boost promotion ends on July&nbsp;20.</p>
                     </div>
                     
                     <div style="margin-top: 25px;">
@@ -3600,53 +3635,53 @@
                 
                 <div class="model-grid">
                     <div class="model-card highlighted">
-                        <p>Air Cooling 800W for 2mm of SS 2mm of CS and 2mm of aluminum | 220V Single or Three Phase | Including single wire feeder</p>
+                        <p><a href="https://alleriastore.com/products/sf-mobile-weldstar-breeze-on-the-go-welding-torch?variant=46038919872763" target="_blank" style="text-decoration: none; color: inherit;">Air Cooling 800W for 2mm of SS 2mm of CS and 2mm of aluminum | 220V Single or Three Phase | Including single wire feeder</a></p>
                     </div>
                     
                     <div class="model-card">
-                        <p>Air Cooling 1200W for 3mm of SS 3mm of CS and 2-3mm of aluminum | 220V Single or Three Phase | Including single wire feeder</p>
+                        <p><a href="https://alleriastore.com/products/sf-mobile-weldstar-breeze-on-the-go-welding-torch?variant=47315006292219" target="_blank" style="text-decoration: none; color: inherit;">Air Cooling 1200W for 3mm of SS 3mm of CS and 2-3mm of aluminum | 220V Single or Three Phase | Including single wire feeder</a></p>
                     </div>
                     
                     <div class="model-card">
-                        <p>Water Cooling 1500W for 4mm of SS 4mm of CS and 3mm of aluminum | 220V Single or Three Phase | Including single wire feeder</p>
+                        <p><a href="https://alleriastore.com/products/sf-mobile-weldstar-breeze-on-the-go-welding-torch?variant=46038919938299" target="_blank" style="text-decoration: none; color: inherit;">Water Cooling 1500W for 4mm of SS 4mm of CS and 3mm of aluminum | 220V Single or Three Phase | Including single wire feeder</a></p>
                     </div>
                     
                     <div class="model-card">
-                        <p>Water Cooling 2000W for 5-6mm of SS 5mm of CS and 4mm of aluminum | 220V Single or Three Phase | Including single wire feeder</p>
+                        <p><a href="https://alleriastore.com/products/sf-mobile-weldstar-breeze-on-the-go-welding-torch?variant=46038919971067" target="_blank" style="text-decoration: none; color: inherit;">Water Cooling 2000W for 5-6mm of SS 5mm of CS and 4mm of aluminum | 220V Single or Three Phase | Including single wire feeder</a></p>
                     </div>
                     
                     <div class="model-card">
-                        <p>Water Cooling 3000W for 8mm of SS 7-8mm of CS and 5-7mm of aluminum | 380V Three Phase | Including single wire feeder</p>
+                        <p><a href="https://alleriastore.com/products/sf-mobile-weldstar-breeze-on-the-go-welding-torch?variant=46038920003835" target="_blank" style="text-decoration: none; color: inherit;">Water Cooling 3000W for 8mm of SS 7-8mm of CS and 5-7mm of aluminum | 380V Three Phase | Including single wire feeder</a></p>
                     </div>
                 </div>
                 
                 <div class="accessories-grid">
                     <div class="accessory-card">
-                        <p>Mobile Cart for Air Cooling 800W/1200W (Optional)</p>
+                        <p><a href="https://alleriastore.com/products/sf-mobile-weldstar-breeze-on-the-go-welding-torch?variant=46843888107771" target="_blank" style="text-decoration: none; color: inherit;">Mobile Cart for Air Cooling 800W/1200W (Optional)</a></p>
                     </div>
                     
                     <div class="accessory-card">
-                        <p>Mobile Cart for Water Cooling 1500W/2000W (Optional)</p>
+                        <p><a href="https://alleriastore.com/products/sf-mobile-weldstar-breeze-on-the-go-welding-torch?variant=46843888140539" target="_blank" style="text-decoration: none; color: inherit;">Mobile Cart for Water Cooling 1500W/2000W (Optional)</a></p>
                     </div>
                     
                     <div class="accessory-card">
-                        <p>Mobile Cart for Water Cooling 3000W (Optional)</p>
+                        <p><a href="https://alleriastore.com/products/sf-mobile-weldstar-breeze-on-the-go-welding-torch?variant=46843888173307" target="_blank" style="text-decoration: none; color: inherit;">Mobile Cart for Water Cooling 3000W (Optional)</a></p>
                     </div>
                     
                     <div class="accessory-card">
-                        <p>Welding Table (Optional)</p>
+                        <p><a href="https://alleriastore.com/products/sf-mobile-weldstar-breeze-on-the-go-welding-torch?variant=46957162791163" target="_blank" style="text-decoration: none; color: inherit;">Welding Table (Optional)</a></p>
                     </div>
                     
                     <div class="accessory-card">
-                        <p>Welding Booth (Optional)</p>
+                        <p><a href="https://alleriastore.com/products/sf-mobile-weldstar-breeze-on-the-go-welding-torch?variant=46957162823931" target="_blank" style="text-decoration: none; color: inherit;">Welding Booth (Optional)</a></p>
                     </div>
                     
                     <div class="accessory-card">
-                        <p>Annual consumables package (Optional)</p>
+                        <p><a href="https://alleriastore.com/products/sf-mobile-weldstar-breeze-on-the-go-welding-torch?variant=46869719908603" target="_blank" style="text-decoration: none; color: inherit;">Annual consumables package (Optional)</a></p>
                     </div>
                     
                     <div class="accessory-card">
-                        <p>Dual Wire Feeder (Optional)</p>
+                        <p><a href="https://alleriastore.com/products/sf-mobile-weldstar-breeze-on-the-go-welding-torch?variant=46986442080507" target="_blank" style="text-decoration: none; color: inherit;">Dual Wire Feeder (Optional)</a></p>
                     </div>
                 </div>
             </div>
